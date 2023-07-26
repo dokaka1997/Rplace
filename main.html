@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        /* Đặt vị trí cố định cho phần tử "infoContainer" */
+        #infoContainer {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Định dạng phần tử "pixelInfo" */
+        #pixelInfo {
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        /* Định dạng phần tử "colorPicker" */
+        #colorPicker {
+            width: 40px;
+            height: 40px;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="infoContainer">
+        <div id="pixelInfo"></div>
+        <input type="color" id="colorPicker">
+    </div>
+    <br>
+    <canvas id="pixelCanvas" width="2000" height="2000"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
